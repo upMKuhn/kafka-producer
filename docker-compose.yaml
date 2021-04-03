@@ -1,0 +1,10 @@
+version: '3'
+services:
+  database:
+    image: "postgres" # use latest official postgres version
+    environment:
+      - POSTGRES_USER=user1
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=kafka-demo
+    ports:
+      - 5432:5432
